@@ -27,7 +27,5 @@ class WelcomeActivity : ComponentActivity() {
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
-
-
     }
 }
