@@ -7,4 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".ReviewActivity">
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/reviewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
