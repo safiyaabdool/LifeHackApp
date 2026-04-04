@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
 
 class QuizActivity : AppCompatActivity() {
 
@@ -27,7 +28,7 @@ class QuizActivity : AppCompatActivity() {
         val falseBtn = findViewById<Button>(R.id.falseBtn)
         val nextBtn = findViewById<Button>(R.id.nextBtn)
 
-        questions = listOf(
+        val question = listOf(
             Question("Putting your phone in rice fixes water damage", false, "Rice does not effectively remove moisture."),
             Question("Using a straw can prevent drinks from staining teeth", true, "It reduces contact with teeth."),
             Question("Cracking knuckles causes arthritis", false, "No scientific evidence supports this."),
@@ -77,9 +78,10 @@ loadQuestion()
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
 
+        }
+
             val intent = Intent(this, ScoreActivity::class.java)
             intent.putExtra("Score", score)
             startActivity(intent)
         }
     }
-}
