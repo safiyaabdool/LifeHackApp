@@ -25,6 +25,7 @@ class ScoreActivity : AppCompatActivity() {
         scoreText.text = "Score: $score / $total"
 
         feedbackText.text =
+
             if (score > total / 2) "Well done!" else "Try again!"
 
             reviewBtn.setOnClickListener {
