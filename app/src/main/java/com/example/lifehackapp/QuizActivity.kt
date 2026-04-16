@@ -73,12 +73,6 @@ class QuizActivity : AppCompatActivity() {
         }
 loadQuestion()
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-
-        }
 
             val intent = Intent(this, ScoreActivity::class.java)
             intent.putExtra("Score", score)

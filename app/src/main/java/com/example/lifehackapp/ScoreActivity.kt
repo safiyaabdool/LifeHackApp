@@ -24,13 +24,17 @@ class ScoreActivity : AppCompatActivity() {
 
         scoreText.text = "Score: $score / $total"
 
-        feedbackText.text =
 
+        feedbackText.text =
             if (score > total / 2) "Well done!" else "Try again!"
 
-            reviewBtn.setOnClickListener {
-                val intent = Intent(this, ReviewActivity::class.java)
-                startActivity(intent)
+        reviewBtn.setOnClickListener {
+
+            val intent = Intent(this, ReviewActivity::class.java)
+
+            startActivity(intent)
+
+
             }
         }
     }
