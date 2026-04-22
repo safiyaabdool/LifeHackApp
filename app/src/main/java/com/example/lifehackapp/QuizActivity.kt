@@ -28,26 +28,38 @@ class QuizActivity : AppCompatActivity() {
         val falseBtn = findViewById<Button>(R.id.falseBtn)
         val nextBtn = findViewById<Button>(R.id.nextBtn)
 
-        val question = listOf(
-            Question("Putting your phone in rice fixes water damage", false, "Rice does not effectively remove moisture."),
-            Question("Using a straw can prevent drinks from staining teeth", true, "It reduces contact with teeth."),
-            Question("Cracking knuckles causes arthritis", false, "No scientific evidence supports this."),
+        questions = listOf(
+            Question(
+                "Putting your phone in rice fixes water damage",
+                false,
+                "Rice does not effectively remove moisture."
+            ),
+            Question(
+                "Using a straw can prevent drinks from staining teeth",
+                true,
+                "It reduces contact with teeth."
+            ),
+            Question(
+                "Cracking knuckles causes arthritis",
+                false,
+                "No scientific evidence supports this."
+            ),
             Question("Freezing bread makes it last longer", true, "It slows down mold growth.")
         )
 
-        fun loadQuestion(){
-            val q = questions [currentIndex]
+        fun loadQuestion() {
+            val q = questions[currentIndex]
             questionText.text = q.statement
             feedbackText.text = ""
             answered = false
         }
 
-        fun checkAnswer(userAnswer: Boolean){
+        fun checkAnswer(userAnswer: Boolean) {
             if (answered) return
 
             val correct = questions[currentIndex].isHack
 
-            if (userAnswer== correct) {
+            if (userAnswer == correct) {
                 feedbackText.text = "Correct! ${questions[currentIndex].explanation}"
                 score++
             } else {
@@ -62,7 +74,7 @@ class QuizActivity : AppCompatActivity() {
         nextBtn.setOnClickListener {
             currentIndex++
 
-            if (currentIndex < question.size) {
+            if (currentIndex < questions.size) {
                 loadQuestion()
             } else {
                 val intent = Intent(this, ScoreActivity::class.java)
@@ -71,11 +83,5 @@ class QuizActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-loadQuestion()
-
-
-            val intent = Intent(this, ScoreActivity::class.java)
-            intent.putExtra("Score", score)
-            startActivity(intent)
-        }
     }
+}

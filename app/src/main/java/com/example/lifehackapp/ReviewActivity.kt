@@ -28,8 +28,8 @@ class ReviewActivity : AppCompatActivity() {
             ),
             Question(
                 "Cracking knuckles causes arthritis",
-                true,
-                "Slows mold growth."
+                false,
+                "No scientific evidence supports this."
             )
         )
         val builder = StringBuilder()

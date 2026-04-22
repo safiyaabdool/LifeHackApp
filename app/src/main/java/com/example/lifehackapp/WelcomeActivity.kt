@@ -20,11 +20,9 @@ class WelcomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_welcome)
 
         val startBtn = findViewById<Button>(R.id.startBtn)
-
         startBtn.setOnClickListener {
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
