@@ -3,15 +3,35 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="24dp"
-    android:background="#FFFFFF"
+    android:background="@drawable/gradient_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/card_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:text="Life Hacker"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:fontFamily="@font/bungee_regular"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     <TextView
         android:text="Life Hack or Urban Myth?"
         android:textSize="26sp"
         android:textStyle="bold"
         android:textColor="#000000"
+        android:fontFamily="@font/bungee_regular"
         android:layout_marginBottom="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -20,13 +40,20 @@
         android:text="Test your knowledge and learn which life hacks are real!"
         android:layout_marginBottom="24dp"
         android:textColor="#000000"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/startBtn"
         android:text="Start"
+        android:fontFamily="@font/bungee_regular"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/text_white"
+        android:padding="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
 </LinearLayout>

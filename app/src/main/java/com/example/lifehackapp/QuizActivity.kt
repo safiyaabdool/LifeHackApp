@@ -44,7 +44,10 @@ class QuizActivity : AppCompatActivity() {
                 false,
                 "No scientific evidence supports this."
             ),
-            Question("Freezing bread makes it last longer", true, "It slows down mold growth.")
+            Question(
+                "Freezing bread makes it last longer",
+                true,
+                "It slows down mold growth.")
         )
 
         fun loadQuestion() {
@@ -53,6 +56,7 @@ class QuizActivity : AppCompatActivity() {
             feedbackText.text = ""
             answered = false
         }
+        loadQuestion()
 
         fun checkAnswer(userAnswer: Boolean) {
             if (answered) return
