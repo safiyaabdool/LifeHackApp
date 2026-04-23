@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+        <!--score-->
         <TextView
             android:id="@+id/scoreText"
             android:layout_width="wrap_content"
@@ -23,6 +24,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed" />
 
+        <!--feedback-->
         <TextView
             android:id="@+id/feedbackText"
             android:layout_width="wrap_content"
@@ -37,6 +39,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/scoreText" />
 
+        <!--review button-->
         <Button
             android:id="@+id/reviewBtn"
             android:layout_width="wrap_content"
@@ -52,6 +55,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/feedbackText" />
 
+        <!--exit button-->
         <Button
             android:id="@+id/exitBtn"
             android:layout_width="wrap_content"
@@ -66,6 +70,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/restartBtn" />
 
+        <!--restart button-->
         <Button
             android:id="@+id/restartBtn"
             android:layout_width="wrap_content"

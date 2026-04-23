@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499">
 
+        <!--card-->
         <LinearLayout
             android:layout_width="362dp"
             android:layout_height="452dp"
@@ -29,7 +30,7 @@
             android:orientation="vertical"
             android:padding="24dp">
 
-
+            <!--text box-->
             <ScrollView
                 android:id="@+id/scrollView"
                 android:layout_width="311dp"
@@ -40,6 +41,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
+                <!--review text-->
                 <TextView
                     android:id="@+id/reviewText"
                     android:layout_width="match_parent"
@@ -50,6 +52,7 @@
                     android:textSize="15sp" />
             </ScrollView>
 
+            <!--exit button-->
             <Button
                 android:id="@+id/btnExit"
                 android:layout_width="314dp"
@@ -64,6 +67,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btnRestart" />
 
+            <!--restart button-->
             <Button
                 android:id="@+id/btnRestart"
                 android:layout_width="313dp"

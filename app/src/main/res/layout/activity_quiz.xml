@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!--card-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="376dp"
@@ -23,6 +24,7 @@
             android:orientation="vertical"
             android:padding="24dp">
 
+            <!--questions-->
             <TextView
                 android:id="@+id/questionText"
                 android:layout_width="match_parent"
@@ -32,6 +34,7 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <!--true button-->
             <Button
                 android:id="@+id/trueBtn"
                 android:layout_width="match_parent"
@@ -42,6 +45,7 @@
                 android:text="Hack (True)"
                 android:textColor="@color/text_white" />
 
+            <!--false button-->
             <Button
                 android:id="@+id/falseBtn"
                 android:layout_width="match_parent"
@@ -52,6 +56,7 @@
                 android:text="Hack (false)"
                 android:textColor="@color/text_white" />
 
+            <!--comments-->
             <TextView
                 android:id="@+id/feedbackText"
                 android:layout_width="match_parent"
@@ -61,6 +66,7 @@
                 android:textColor="@color/text_white"
                 android:textSize="16sp" />
 
+            <!--next button-->
             <Button
                 android:id="@+id/nextBtn"
                 android:layout_width="match_parent"
